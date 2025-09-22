@@ -1,0 +1,417 @@
+/* 
+    Author: Benrueya Kamkongsak
+    For: Command Center
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    padding: 2%;
+    width: 80%;
+    margin: 1% 6% 2% 0%; 
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* for menu */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    background-color: #1e3799;
+    padding: 0%;
+    align-items: center;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 1px;
+    margin-left: 45%;
+}
+.menu ul li{
+    display: inline;
+    text-align: right;
+    padding: 1.5%;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 0.9rem;
+}
+.menu ul li a:hover{
+    color: #4a69bd;
+}
+/* search box */
+
+.search-container {
+    display: flex; /* ใช้ flexbox จัดตำแหน่ง */
+    align-items: center; /* จัดให้องค์ประกอบอยู่กึ่งกลางแนวตั้ง */
+    margin-left: 8%;
+}
+.search-form {
+    display: flex; /* ใช้ flexbox จัดตำแหน่ง */
+    align-items: center; /* จัดให้องค์ประกอบอยู่กึ่งกลางแนวตั้ง */
+    width: 40%; /* ปรับความกว้างตามต้องการ */
+}
+
+.search-form input {
+    padding: 8px 15px;
+    margin-right: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 38px;
+}
+
+.search-form button {
+    padding: 10px 15px;
+    background-color: #4a69bd; /* สีปุ่ม */
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.search-form button:hover {
+    background-color: #3b5998; /* สีปุ่มเมื่อ hover */
+}
+
+
+
+
+
+/* สำหรับ Main content */
+.main-content {
+    margin: 2% 6%;
+    text-align: left;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    margin-bottom: -20px;
+  }
+
+.filter-container {
+    margin-top: 30px;
+}
+
+.filter-form {
+    display: flex;
+    margin-left: 60%;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+
+/* สไตล์ปุ่มทั่วไปในฟอร์มกรอง */
+.filter-form select, .filter-form input, .filter-form button {
+    padding: 5px;
+    background-color: whitesmoke; /* สีพื้นหลังสำหรับ input และ select */
+    color: black; /* ข้อความในปุ่มเป็นสีขาว */
+    border: 1px solid #ccc; /* เอาขอบออก */
+    border-radius: 3px; /* ทำให้มุมของปุ่มโค้ง */
+    cursor: pointer; /* แสดง pointer เมื่อ hover */
+}
+
+/* ปรับสีปุ่ม "กรอง" */
+.filter-form button[type="submit"] {
+    background-color: #3867d6; /* สีปุ่มกรอง */
+    width: 60px; 
+}
+
+/* ปรับสีปุ่ม "ล้าง" */
+.filter-form button[type="button"] {
+    background-color: #f53b57; /* สีปุ่มล้าง (สีแดง) */
+    width: 60px; 
+}
+
+
+.filter-ping {
+    display: flex;
+    margin-left: 82%;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+
+/* สไตล์ปุ่มทั่วไปในฟอร์มกรอง */
+.filter-ping select, .filter-ping input, .filter-ping button {
+    padding: 5px;
+    background-color: whitesmoke; /* สีพื้นหลังสำหรับ input และ select */
+    color: black; /* ข้อความในปุ่มเป็นสีขาว */
+    border: 1px solid #ccc; /* เอาขอบออก */
+    border-radius: 3px; /* ทำให้มุมของปุ่มโค้ง */
+    cursor: pointer; /* แสดง pointer เมื่อ hover */
+}
+
+/* ปรับสีปุ่ม "กรอง" */
+.filter-ping button[type="submit"] {
+    background-color: #3867d6; /* สีปุ่มกรอง */
+    padding: 5px 18px;
+}
+
+/* ปรับสีปุ่ม "ล้าง" */
+.filter-ping button[type="button"] {
+    background-color: #f53b57; /* สีปุ่มล้าง (สีแดง) */
+    padding: 5px 18px;
+}
+
+
+
+.filter-jaja {
+    display: inline;
+    align-items: center;
+    margin-left: 19%;
+    margin-top: 50%;
+}
+.filter-jaja select, .filter-jaja input, .filter-jaja button {
+    padding: 5px;
+    background-color: whitesmoke; /* สีพื้นหลังสำหรับ input และ select */
+    color: black; /* ข้อความในปุ่มเป็นสีขาว */
+    border: 1px solid #ccc; /* เอาขอบออก */
+    border-radius: 3px; /* ทำให้มุมของปุ่มโค้ง */
+    cursor: pointer; /* แสดง pointer เมื่อ hover */
+    margin-bottom: 1px;
+}
+.filter-jaja button{
+    background-color: #f53b57; /* สีปุ่มล้าง (สีแดง) */
+    width: 60px; 
+}
+
+
+/* table */
+
+
+table {
+    table-layout: auto;
+    width: 100%; /* ปรับความกว้างของตารางให้พอดี */
+    margin: 20px auto; 
+    border-collapse: collapse; /* ทำให้เส้นขอบของตารางไม่ทับกัน */
+    font-family: Arial, sans-serif; /* เปลี่ยนฟอนต์ */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center; /* จัดข้อความให้ตรงกลาง */
+    border: 1px solid #ddd; /* เส้นขอบที่อ่อน */
+}
+
+th {
+    background-color: #737373; /* สีพื้นหลังของหัวตาราง */
+    color: #f2f2f2; /* สีตัวอักษรในหัวตาราง */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* สีพื้นหลังของแถวที่คู่ */
+}
+
+tr:hover {
+    background-color: #ddd; /* เมื่อ hover จะเปลี่ยนสีพื้นหลัง */
+    cursor: pointer; /* แสดง pointer เมื่อ hover บนแถว */
+}
+
+td {
+    font-size: 14px; /* ขนาดตัวอักษร */
+}
+
+tbody td {
+    text-align: center; /* จัดข้อความใน body ของตารางให้ตรงกลาง */
+}
+
+
+/* สไตล์สำหรับ sort-icon */
+th .sort-icon::before {
+    content: "▲"; /* สัญลักษณ์ขึ้น */
+    font-size: 14px;
+    color: white; /* สีขาว */
+    margin-left: 5px;
+
+    content: "▼"; /* สัญลักษณ์ลง */
+}
+
+/* เมื่อเรียงลำดับขึ้น */
+th.sort-asc .sort-icon::before {
+    content: "▲"; /* สัญลักษณ์ขึ้น */
+    color: red; /* เปลี่ยนเป็นสีแดง */
+}
+
+/* เมื่อเรียงลำดับลง */
+th.sort-desc .sort-icon::before {
+    content: "▼"; /* สัญลักษณ์ลง */
+    color: red; /* เปลี่ยนเป็นสีแดง */
+}
+
+
+
+
+
+
+
+
+/* for footer */
+.footer{
+    background-color: #1e3799;
+    color: white;
+    padding: 1%;
+}
+
+
+
+
+/* Login page
+
+*/
+#login-page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#login-page .body-log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #e2e2e2, #1e3799);
+    color: black;
+}
+
+#login-page .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+}
+
+#login-page .form-box {
+    width: 400%;
+    max-width: 450px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#login-page h2{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login-page .form-box input{
+    width: 94%;
+    padding: 12px;
+    background: #eee;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+#login-page .form-box button{
+    width: 100%;
+    padding: 12px;
+    background: #4a69bd;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 25px;
+    transition: 0.5s;
+}
+
+#login-page button:hover{
+    background: #1e3799;
+}
+/* สำหรับ pagination */
+.pagination-container{
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center; /* เปลี่ยนเป็น center */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    border-top: 3px solid #0ea5e9;
+}
+
+.pagination-controls{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.pagination-controls a,
+.pagination-controls button {
+    min-width: auto;
+    padding: 8px 16px;
+    font-size: 13px;
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.pagination-controls a.active {
+    background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
+    box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
+    transform: translateY(-2px);
+}
+
+.pagination-controls a:hover:not(.active) {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
+    transform: translateY(-2px);
+}
+
+.pagination-controls a.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    background: #94a3b8;
+}
+        
+.pagination-controls a.disabled:hover {
+    transform: none;
+    box-shadow: none;
+    background: #94a3b8;
+}
+
+.page-info {
+    font-weight: bold;
+    color: #0ea5e9;
+    font-size: 14px;
+}
+
+/* transaction page
+
+*/
